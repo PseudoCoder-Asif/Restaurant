@@ -1,0 +1,55 @@
+@mixin highlight(){
+    color: #cc9900;
+    font-size: 36px;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+}
+
+@mixin pera(){
+    color: #4c4c4c;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+}
+
+@mixin pera-3(){
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+}
+
+@mixin pera-2(){
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Gentium Book Basic', serif;
+    line-height: 45px;
+}
+
+@mixin high-2{
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+}
+
+@mixin dish {
+    color: #cc9900;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+}
+
+@mixin dish-2 {
+    color: #fefefe;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+    margin-bottom: 12px;
+}
+/*==================================================
+      MIXIN Part End
+==================================================*/ 

@@ -1,0 +1,29 @@
+#main_review{
+    padding: 68px 0;
+    .review_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .review_col{
+            padding: 30px 0;
+            text-align: center;
+            width: 650px;
+            background: rgba(19, 18, 18, 0.801);
+            h3{
+                @include high-2();
+                margin-bottom: 10px
+            }
+            p{
+                @include pera-2();
+                span{
+                    display: inline-block;
+                    margin-top: 12px;
+                }
+                .down{
+                    color: gold;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

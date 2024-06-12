@@ -1,0 +1,44 @@
+#main_dish{
+    padding: 65px 0;
+    .dish_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .dish_col{
+            width: 435px;
+            &:nth-child(3){
+                margin-top: 75px;
+            }
+            .head_row{
+                text-align: center;
+                h3{
+                    @include highlight();
+                    margin-bottom: 10px
+                }
+            }
+            .dish_text{
+                h5{
+                    @include dish();
+                    position: relative;
+                    margin-top: 20px;
+                }
+                hr{
+                    color: #cc9900;
+                    margin-bottom: 7px;
+                }
+                p{
+                    color: #4c4c4c;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: 'Lato', sans-serif;
+                    line-height: 24px;
+                }
+                .right{
+                    position: absolute;
+                    left: 380px;
+                    top: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+#main_footer{
+    padding: 37px 0;
+    background: #191919;
+    .foot_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .foot_col_1{
+            width: 354px;
+            text-align: center;
+            h3{
+                @include dish-2();
+            }
+            p{
+                @include pera-3();
+                span{
+                    display: inline-block;
+                }
+            }
+            img{
+                margin-bottom: 14px;
+            }
+        }
+        .foot_col_2{
+            width: 198px;
+            text-align: center;
+            .foot_icon{
+                margin-top: 47px;
+                a{
+                    color: #ffffff;
+                    font-size: 20px;
+                    margin: 0 10px;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #12b0ee;
+                    }
+                }
+            }
+            h3{
+                @include dish-2();
+            }
+            p{
+                @include pera-3();
+            }
+            img{
+                margin-bottom: 14px;
+            }
+        }
+        .foot_col_3{
+            width: 235px;
+            text-align: center;
+            .foot_icon{
+                margin-top: 40px;
+                a{
+                    color: #ffffff;
+                    font-size: 20px;
+                    margin: 0 10px;
+                    transition: all linear .3s;
+                    border: 1px solid #ffffff;
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    &:hover{
+                        color: red;
+                        border-color: red;
+                        border: 3px solid;
+                    }
+                }
+            }
+            h3{
+                @include dish-2();
+            }
+            p{
+                @include pera-3();
+            }
+            img{
+                margin-bottom: 14px;
+            }
+        }        
+    }
+}

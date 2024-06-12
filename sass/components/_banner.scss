@@ -1,0 +1,38 @@
+#main_banner{
+    padding: 140px 0 95px;
+    .banner_row{
+        text-align: center;
+        .banner_text{
+            h1{
+            color: #ffffff;
+            font-size: 90px;
+            font-weight: 400;
+            font-family: 'Yeseva One', cursive;
+            span{
+                display: inline-block;
+            }
+            }
+            img{
+                margin-top: 10px;
+            }
+        }
+        .banner_button{
+            margin-top: 33px;
+            a{
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'Lato', sans-serif;
+            padding: 10px 20px;
+            border: 1px solid #ffffff;
+            margin-left: 15px;
+            background-color: rgba(255, 255, 255, 0.164);
+            transition: all linear .3s;
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.534);
+                border-color: rgba(0, 0, 0, 0.534);
+            }
+            }
+        }
+    }
+}

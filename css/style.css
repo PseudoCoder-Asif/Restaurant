@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  width: 1150px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/*=======================================================
+            Common CSS End
+========================================================*/
+/*==================================================
+      MIXIN Part End
+==================================================*/
+#main_menu {
+  padding: 10px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to top, #1a191900 0%, #181717 100%);
+}
+#main_menu .menu_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#main_menu .menu_row .menu_logo a img {
+  width: 100%;
+  max-width: 100%;
+}
+#main_menu .menu_row .menu_text ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main_menu .menu_row .menu_text ul li a {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 500;
+  font-family: "Gentium Book Basic", serif;
+  padding: 0 25px;
+  line-height: 70px;
+  position: relative;
+}
+#main_menu .menu_row .menu_text ul li a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -10px;
+  width: 0;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all linear 0.3s;
+}
+#main_menu .menu_row .menu_text ul li a:hover::after {
+  width: 100%;
+}
+
+#main_banner {
+  padding: 140px 0 95px;
+}
+#main_banner .banner_row {
+  text-align: center;
+}
+#main_banner .banner_row .banner_text h1 {
+  color: #ffffff;
+  font-size: 90px;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+}
+#main_banner .banner_row .banner_text h1 span {
+  display: inline-block;
+}
+#main_banner .banner_row .banner_text img {
+  margin-top: 10px;
+}
+#main_banner .banner_row .banner_button {
+  margin-top: 33px;
+}
+#main_banner .banner_row .banner_button a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  margin-left: 15px;
+  background-color: rgba(255, 255, 255, 0.164);
+  transition: all linear 0.3s;
+}
+#main_banner .banner_row .banner_button a:hover {
+  background-color: rgba(0, 0, 0, 0.534);
+  border-color: rgba(0, 0, 0, 0.534);
+}
+
+#main_dish {
+  padding: 65px 0;
+}
+#main_dish .dish_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#main_dish .dish_row .dish_col {
+  width: 435px;
+}
+#main_dish .dish_row .dish_col:nth-child(3) {
+  margin-top: 75px;
+}
+#main_dish .dish_row .dish_col .head_row {
+  text-align: center;
+}
+#main_dish .dish_row .dish_col .head_row h3 {
+  color: #cc9900;
+  font-size: 36px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#main_dish .dish_row .dish_col .dish_text h5 {
+  color: #cc9900;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+  position: relative;
+  margin-top: 20px;
+}
+#main_dish .dish_row .dish_col .dish_text hr {
+  color: #cc9900;
+  margin-bottom: 7px;
+}
+#main_dish .dish_row .dish_col .dish_text p {
+  color: #4c4c4c;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 24px;
+}
+#main_dish .dish_row .dish_col .dish_text .right {
+  position: absolute;
+  left: 380px;
+  top: 0;
+}
+
+#main_ingre {
+  padding: 67px 0;
+}
+#main_ingre .ingre_row {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-end;
+}
+#main_ingre .ingre_row .ingre_col {
+  background-color: rgba(0, 0, 0, 0.452);
+  text-align: center;
+  width: 470px;
+}
+#main_ingre .ingre_row .ingre_col h3 {
+  color: #cc9900;
+  font-size: 36px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+#main_ingre .ingre_row .ingre_col p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 24px;
+  margin-top: 20px;
+}
+#main_ingre .ingre_row .ingre_col p span {
+  display: inline-block;
+}
+#main_ingre .ingre_row .ingre_col .ingre_img {
+  padding: 15px 0;
+}
+#main_ingre .ingre_row .ingre_col .ingre_img img {
+  margin: 0 12px;
+  border: 3px solid #2e2b2b;
+  border-radius: 50%;
+}
+
+#main_order {
+  padding: 70px 0;
+}
+#main_order .order_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#main_order .order_row .order_col_1 {
+  text-align: center;
+  width: 570px;
+}
+#main_order .order_row .order_col_1 img {
+  margin: 0 6.5px;
+}
+#main_order .order_row .order_col_2 {
+  width: 450px;
+}
+#main_order .order_row .order_col_2 .order_text {
+  margin-bottom: 29px;
+  text-align: center;
+}
+#main_order .order_row .order_col_2 .order_text h3 {
+  color: #cc9900;
+  font-size: 36px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+#main_order .order_row .order_col_2 .order_text p {
+  color: #4c4c4c;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 24px;
+  margin-top: 19px;
+}
+#main_order .order_row .order_col_2 .order_text p span {
+  display: inline-block;
+}
+#main_order .order_row .order_col_2 .order_text p .top {
+  margin-top: 8px;
+}
+#main_order .order_row .order_col_2 .order_table {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main_order .order_row .order_col_2 .order_table ul {
+  margin-bottom: 28px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#main_order .order_row .order_col_2 .order_table ul li {
+  margin: 0 5px;
+}
+#main_order .order_row .order_col_2 .order_table ul li label {
+  color: #cc9900;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+#main_order .order_row .order_col_2 .order_table ul li input {
+  outline: 0;
+  border: 1px solid rgba(59, 57, 57, 0.192);
+  padding: 10px 0 10px 15px;
+  color: #7c7c7c;
+  font-size: 16px;
+  font-style: italic;
+  transition: all linear 0.3s;
+  font-family: "Open Sans", sans-serif;
+}
+#main_order .order_row .order_col_2 .order_table ul li input:hover {
+  border-color: #cc9900;
+}
+#main_order .order_row .order_col_2 .order_button {
+  margin-top: 5px;
+  text-align: center;
+}
+#main_order .order_row .order_col_2 .order_button a {
+  padding: 11px 63px;
+  background-color: #cc9900;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+}
+
+#main_review {
+  padding: 68px 0;
+}
+#main_review .review_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#main_review .review_row .review_col {
+  padding: 30px 0;
+  text-align: center;
+  width: 650px;
+  background: rgba(19, 18, 18, 0.801);
+}
+#main_review .review_row .review_col h3 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+  margin-bottom: 10px;
+}
+#main_review .review_row .review_col p {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Gentium Book Basic", serif;
+  line-height: 45px;
+}
+#main_review .review_row .review_col p span {
+  display: inline-block;
+  margin-top: 12px;
+}
+#main_review .review_row .review_col p .down {
+  color: gold;
+  font-size: 16px;
+}
+
+#main_food {
+  padding: 33px 0 8px;
+}
+#main_food .food_row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+}
+#main_food .food_row .food_col_1 {
+  width: 415px;
+}
+#main_food .food_row .food_col_1 h3 {
+  color: #cc9900;
+  font-size: 36px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  margin-bottom: 12px;
+  margin-top: 38px;
+}
+#main_food .food_row .food_col_1 p {
+  color: #4c4c4c;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 24px;
+  margin-top: 16px;
+  margin-bottom: 33px;
+}
+#main_food .food_row .food_col_1 p span {
+  display: inline-block;
+}
+#main_food .food_row .food_col_2 {
+  width: 555px;
+}
+#main_food .food_row .food_col_2 img {
+  width: 100%;
+  max-width: 100%;
+}
+
+#main_footer {
+  padding: 37px 0;
+  background: #191919;
+}
+#main_footer .foot_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#main_footer .foot_row .foot_col_1 {
+  width: 354px;
+  text-align: center;
+}
+#main_footer .foot_row .foot_col_1 h3 {
+  color: #fefefe;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+  margin-bottom: 12px;
+}
+#main_footer .foot_row .foot_col_1 p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 24px;
+}
+#main_footer .foot_row .foot_col_1 p span {
+  display: inline-block;
+}
+#main_footer .foot_row .foot_col_1 img {
+  margin-bottom: 14px;
+}
+#main_footer .foot_row .foot_col_2 {
+  width: 198px;
+  text-align: center;
+}
+#main_footer .foot_row .foot_col_2 .foot_icon {
+  margin-top: 47px;
+}
+#main_footer .foot_row .foot_col_2 .foot_icon a {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: all linear 0.3s;
+}
+#main_footer .foot_row .foot_col_2 .foot_icon a:hover {
+  color: #12b0ee;
+}
+#main_footer .foot_row .foot_col_2 h3 {
+  color: #fefefe;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+  margin-bottom: 12px;
+}
+#main_footer .foot_row .foot_col_2 p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 24px;
+}
+#main_footer .foot_row .foot_col_2 img {
+  margin-bottom: 14px;
+}
+#main_footer .foot_row .foot_col_3 {
+  width: 235px;
+  text-align: center;
+}
+#main_footer .foot_row .foot_col_3 .foot_icon {
+  margin-top: 40px;
+}
+#main_footer .foot_row .foot_col_3 .foot_icon a {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: all linear 0.3s;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+#main_footer .foot_row .foot_col_3 .foot_icon a:hover {
+  color: red;
+  border-color: red;
+  border: 3px solid;
+}
+#main_footer .foot_row .foot_col_3 h3 {
+  color: #fefefe;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "Yeseva One", cursive;
+  margin-bottom: 12px;
+}
+#main_footer .foot_row .foot_col_3 p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 24px;
+}
+#main_footer .foot_row .foot_col_3 img {
+  margin-bottom: 14px;
+}/*# sourceMappingURL=style.css.map */

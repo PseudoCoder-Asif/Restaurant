@@ -1,0 +1,79 @@
+#main_order{
+    padding: 70px 0;
+    .order_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .order_col_1{
+            text-align: center;
+            width: 570px;
+            img{
+                margin: 0 6.5px;
+            }
+        }
+        .order_col_2{
+            width: 450px;
+            .order_text{
+                margin-bottom: 29px;
+                text-align: center;
+                h3{
+                    @include highlight();
+                    margin-bottom: 12px
+                }
+                p{
+                    @include pera();
+                    margin-top: 19px;
+                    span{
+                        display: inline-block;
+                    }
+                    .top{
+                        margin-top: 8px;
+                    }
+                }
+            }
+            .order_table{
+                display: flex;
+                flex-wrap: wrap;
+                ul{
+                    margin-bottom: 28px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        margin: 0 5px;
+                        label{    
+                        color: #cc9900;
+                        font-size: 14px;
+                        font-weight: 700;
+                        font-family: 'Open Sans', sans-serif;
+                        }
+                        input{
+                            outline: 0;
+                            border: 1px solid rgba(59, 57, 57, 0.192);
+                            padding: 10px 0 10px 15px;
+                            color: #7c7c7c;
+                            font-size: 16px;
+                            font-style: italic;
+                            transition: all linear .3s;
+                            font-family: 'Open Sans', sans-serif;
+                            &:hover{
+                                border-color: #cc9900;
+                            }
+                        }
+                    }
+                }
+            }
+            .order_button{
+                margin-top: 5px;
+                text-align: center;
+                a{
+                padding: 11px 63px;
+                background-color: #cc9900;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: 'Open Sans', sans-serif;
+                color: #ffffff;
+                }
+            }
+        }
+    }
+}

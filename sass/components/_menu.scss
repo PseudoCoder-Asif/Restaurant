@@ -1,0 +1,51 @@
+#main_menu{
+    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to top,#1a191900 0%, #181717 100%);
+    .menu_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .menu_logo{
+            a{
+                img{
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+        .menu_text{
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    a{
+                        color: #ffffff;
+                        font-size: 21px;
+                        font-weight: 500;
+                        font-family: 'Gentium Book Basic', serif;
+                        padding: 0 25px;
+                        line-height: 70px;
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            left: 0;
+                            top: -10px;
+                            width: 0;
+                            height: 3px;
+                            background-color: #ffffff;
+                            transition: all linear .3s;
+                        }
+                        &:hover::after{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

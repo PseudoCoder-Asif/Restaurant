@@ -1,0 +1,32 @@
+#main_food{
+    padding: 33px 0 8px;
+    .food_row{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-evenly;
+        .food_col_1{
+            width: 415px;
+            h3{
+                @include highlight();
+                margin-bottom: 12px;
+                margin-top: 38px;
+            }
+            p{
+                @include pera();
+                margin-top: 16px;
+                margin-bottom: 33px;
+                span{
+                    display: inline-block;
+                }
+            }
+        }
+        .food_col_2{
+            width: 555px;
+            img{
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
